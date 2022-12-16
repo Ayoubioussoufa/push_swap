@@ -6,11 +6,11 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 16:43:41 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/15 18:47:12 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int    is_max(t_stack *x, int number)
 {

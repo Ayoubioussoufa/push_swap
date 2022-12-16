@@ -6,11 +6,11 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:26:07 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/15 17:49:06 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/16 15:59:57 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void    a_to_b(t_stack *a, t_stack *b)
 {
@@ -34,7 +34,7 @@ void    a_to_b(t_stack *a, t_stack *b)
     end = middle + offset;
     while (!is_empty(a) || a->size > 3)
     {
-        a = x->top;
+        a->top = x->top;
         while (a->top->under)
         {
             if (a->top->content >= tab[start] && a->top->content <= tab[end])

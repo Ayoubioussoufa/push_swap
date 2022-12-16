@@ -6,11 +6,11 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:00 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/14 16:50:22 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void    push_a(t_stack *a, t_stack *b)
 {

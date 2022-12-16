@@ -6,11 +6,11 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 08:15:23 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 15:04:36 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	ft_strlen(const char *s)
 {
