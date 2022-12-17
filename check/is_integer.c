@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_integer_duplicated.c                            :+:      :+:    :+:   */
+/*   is_integer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 11:52:36 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 17:01:36 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 11:00:57 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
+
+int is_digit(int c)
+{
+    return (c >= '0' && c <= '9');
+}
 
 int is_int(char *av)
 {
@@ -35,9 +40,9 @@ int is_purely_integer(char *av)
     {
         if (av[i] == '+' || av[i] == '-' || av[i + 1] != 0)
             i++;
-        else if (av[i] >= '0' || av[i] <= '9')
+        while (av[i] >= '0' || av[i] <= '9')
             i++;
-        else
+        if (!is_digit(av[i]))
         {
             ft_putstr("Error\n");
             return (0);
@@ -53,7 +58,7 @@ int is_integer(int ac, char **argv)
     char    **av;
 
     i = 1;
-    while (i <= ac)
+    while (i < ac)
     {
         k = 0;
         av = ft_split(argv[i], ' ');
@@ -72,7 +77,5 @@ int is_integer(int ac, char **argv)
         }
         i++;
     }
-    if (!is_duplicated(av))
-        return (0);
     return (1);
 }

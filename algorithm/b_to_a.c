@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 16:16:54 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 11:58:51 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ void    b_to_a(t_stack *a, t_stack *b)
     down = 0;
     tab = fill_sort_array(a);
     i = ft_strlen(tab) - 1;
-    while (!is_empty(b) || down > 0)
+    while (!is_empty(b))
     {
-        if (!if_found(b, tab))
+        if (if_found(b, tab))
         {
-            while (!if_found(b, tab))
+            while (if_found(b, tab))
             {
                 if (tab[i] == b->top->content)
                 {

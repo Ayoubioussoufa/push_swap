@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:18 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 10:44:32 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void    rotate_a(t_stack *a, int flag)
 {
-    push_bottom_elem(a, a->top);
+    push_bottom_elem(a, creat_elem(a->top->content));
     pop_elem(a);
     if (!flag)
         ft_putstr("ra\n");

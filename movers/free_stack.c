@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_a.c                                           :+:      :+:    :+:   */
+/*   free_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 10:41:00 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 10:44:03 by aybiouss         ###   ########.fr       */
+/*   Created: 2022/12/17 10:33:19 by aybiouss          #+#    #+#             */
+/*   Updated: 2022/12/17 10:34:15 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    push_a(t_stack *a, t_stack *b)
+void    free_stack(t_stack *a)
 {
-    if (!is_empty(b))
-    {
-        push_elem(b, creat_elem(a->top->content));
-        pop_elem(b);
-        ft_putstr("pa/n");
-    }
+    while(a->size)
+        pop_elem(a);
+    free(a);
 }
