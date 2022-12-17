@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:09 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 10:44:19 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 15:30:00 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void    push_b(t_stack *a, t_stack *b)
 {
     if (!is_empty(a))
     {
-        push_elem(a, creat_elem(b->top->content));
+        push_elem(b, creat_elem(a->top->content));
         pop_elem(a);
         ft_putstr("pb/n");
     }

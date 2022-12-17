@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:41 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 16:49:21 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 15:27:21 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void    reverse_rotate_a(t_stack *a, int flag)
 {
-    push_elem(a, a->bottom);
+    if (is_empty(a))
+        return ;
+    push_elem(a, creat_elem(a->bottom->content));
     pop_bottom(a);
     if (!flag)
         ft_putstr("rra\n");

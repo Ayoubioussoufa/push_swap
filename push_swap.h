@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:39:27 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 10:49:55 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/17 15:52:01 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,8 @@ void    reverse_rotate_a(t_stack *a, int flag);
 void    reverse_rotate_b(t_stack *b, int flag);
 void    reverse_rr(t_stack *a, t_stack *b);
 
-//
+//Functions
+
 long	ft_atoi(char *str);
 char    **ft_split(char const *s, char c);
 int	    ft_strlen(const char *s);
@@ -58,7 +59,7 @@ void    pop_elem(t_stack *x);
 void    pop_bottom(t_stack *x);
 void    push_elem(t_stack *x, t_node *elem);
 void    push_bottom_elem(t_stack *x, t_node *elem);
-t_stack    *stack_init(void);
+t_stack *stack_init(void);
 t_node  *creat_elem(int i);
 void    free_stack(t_stack *a);
 
@@ -67,17 +68,20 @@ void    free_stack(t_stack *a);
 
 int     is_empty(t_stack *x);
 int     is_sorted(t_stack *x);
-int    is_max(t_stack *x, int number);
+int     is_max(t_stack *x, int number);
 void    make_to_top(t_stack *x, int number);
-int is_integer(int ac, char **argv);
-int is_duplicated(int size, char **av);
-void check_it(t_stack *a, t_stack *b, int ac, char **av);
+int     is_integer(int ac, char **argv);
+int     is_duplicated(int size, char **av);
+void    check_it(t_stack *a, t_stack *b, int ac, char **av);
 
 // algorithm
 
 char    *fill_sort_array(t_stack *a);
 void    a_to_b(t_stack *a, t_stack *b);
 void    b_to_a(t_stack *a, t_stack *b);
-
+void    sort_fifteen(t_stack *a, t_stack *b);
+void    sort_over(t_stack *a, t_stack *b);
+void    sort_three(t_stack *a);
+void    sort(t_stack *a, t_stack *b);
 
 #endif
