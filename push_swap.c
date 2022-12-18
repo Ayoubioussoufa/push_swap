@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 11:53:32 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 16:06:23 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 16:48:21 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int main(int ac, char **av)
     //     printf("%d\n", a->top->content);
     //     a->top =  a->top->under;
     // }
-   free_stack(a);
-   free(b);
+    free_stack(a);
     return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 12:53:14 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 16:01:59 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 16:50:47 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,5 @@ void    sort_fifteen(t_stack *a, t_stack *b)
     if (a->size == 3)
         sort_three(a);
     while (a->size < length)
-    {
         push_a(a, b);
-        length++;
-    }
 }
