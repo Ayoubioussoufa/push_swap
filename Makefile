@@ -6,7 +6,7 @@
 #    By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/13 11:48:48 by aybiouss          #+#    #+#              #
-#    Updated: 2022/12/18 14:50:31 by aybiouss         ###   ########.fr        #
+#    Updated: 2022/12/18 19:18:13 by aybiouss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OPERATIONS = push_a.c  push_b.c  reverse_rotate_a.c  reverse_rotate_b.c  reverse
 MOVERS = pop_bottom.c  pop_elem.c  push_bottom_elem.c  push_elem.c  stack_init.c creat_elem.c free_stack.c
 FUNCTIONS = ft_atoi.c  ft_split.c  ft_strcmp.c ft_putstr.c  errore.c
 ALGO = a_to_b.c  b_to_a.c  fill_sort_array.c  sort_fifteen.c  sort.c  sort_over.c  sort_three.c
-CHECK = check_it.c  is_duplicated.c  is_empty.c  is_integer.c  is_top_min.c  is_sorted.c  is_purely_integer.c 
+CHECK = check_it.c  is_duplicated.c  is_empty.c  is_integer.c  is_top_min.c  is_sorted.c  is_purely_integer.c check_n.c 
 SRCS = $(addprefix ./check/,$(CHECK))\
 	$(addprefix ./algorithm/,$(ALGO))\
 	$(addprefix ./functions/,$(FUNCTIONS))\

@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:39:27 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 15:36:28 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 19:17:56 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,11 @@ int     is_purely_integer(int size, char *av);
 int     x(int size, char **av);
 int    search_min(t_stack a);
 int    is_index(t_stack x, int number);
+int     check_n(t_stack *a);
 
 // algorithm
 
-char    *fill_sort_array(t_stack *a);
+int    *fill_sort_array(t_stack a);
 void    a_to_b(t_stack *a, t_stack *b);
 void    b_to_a(t_stack *a, t_stack *b);
 void    sort_fifteen(t_stack *a, t_stack *b);

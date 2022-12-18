@@ -6,13 +6,13 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 16:16:54 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 11:58:51 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 19:07:06 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int if_found(t_stack *b, char *tab)
+int if_found(t_stack *b, int *tab)
 {
     int i;
 
@@ -29,12 +29,11 @@ int if_found(t_stack *b, char *tab)
 void    b_to_a(t_stack *a, t_stack *b)
 {
     int     down;
-    char    *tab;
-    int     i;
+    int    *tab;
+    int     i = 0;
 
     down = 0;
-    tab = fill_sort_array(a);
-    i = ft_strlen(tab) - 1;
+    tab = fill_sort_array(*a);
     while (!is_empty(b))
     {
         if (if_found(b, tab))
