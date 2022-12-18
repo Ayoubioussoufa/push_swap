@@ -1,26 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_sorted.c                                        :+:      :+:    :+:   */
+/*   is_purely_integer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/14 16:51:46 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 14:06:44 by aybiouss         ###   ########.fr       */
+/*   Created: 2022/12/18 11:00:40 by aybiouss          #+#    #+#             */
+/*   Updated: 2022/12/18 11:33:01 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int is_sorted(t_stack x)
+
+int is_digit(int c)
 {
-    if (is_empty(&x))
-        return (0);
-    while (x.top->under)
+    return (c >= '0' && c <= '9');
+}
+
+int is_purely_integer(int size, char *av)
+{
+    int i;
+
+    i = 0;
+    if (av[0] == '+' || av[0] == '-' || av[1] != 0)
+        i++;
+    while (i < size)
     {
-        if (x.top->content < x.top->under->content)
-            x.top = x.top->under;
-        else
+        if (!is_digit(av[i]))
+            errore();
+        i++;
+    }
+    return (1);
+}
+
+int x(int size, char **av)
+{
+    int i;
+
+    i = -1;
+    while (++i < size)
+    {
+        if (!is_purely_integer(size, av[i]))
             return (0);
     }
     return (1);

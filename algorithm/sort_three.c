@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 11:26:20 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 11:56:06 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 14:17:25 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,24 @@
 
 void    sort_three(t_stack *a)
 {
-    if (a->top->content < a->bottom->content && a->top->under->content > a->bottom->content)
+    if (a->top->content > a->bottom->content && a->top->under->content > a->top->content)
+        reverse_rotate_a(a, 0);
+    else if (a->top->content > a->top->under->content && a->bottom->content > a->top->content)
+        swap_a(a, 0);
+    else if (a->top->content > a->top->under->content && a->top->under->content > a->bottom->content)
+    {
+        swap_a(a, 0);
+        reverse_rotate_a(a, 0);
+    }
+    else if (a->top->content > a->bottom->content && a->bottom->content > a->top->under->content)
         rotate_a(a, 0);
-    else if (a->top->content < a->bottom->content && a->top->under->content < a->bottom->content)
+    else if (a->bottom->content > a->top->content && a->top->under->content > a->bottom->content)
     {
+        reverse_rotate_a(a, 0);
         swap_a(a, 0);
-        reverse_rotate_a(a, 0);
     }
-    else if (a->top->content < a->bottom->content && a->top->under->content < a->bottom->content
-        && a->top->content > a->top->under->content)
-        reverse_rotate_a(a, 0);
+    else if (a->top->content < a->bottom->content && a->top->content > a->top->under->content)
+        swap_a(a, 0);
     else if (a->top->content > a->bottom->content && a->top->content < a->top->under->content)
-        swap_a(a, 0);
-    else if (a->top->content > a->bottom->content && a->top->under->content < a->bottom->content)
-    {
         reverse_rotate_a(a, 0);
-        swap_a(a, 0);
-    }
 }

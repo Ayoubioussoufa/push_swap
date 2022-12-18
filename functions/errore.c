@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_b.c                                           :+:      :+:    :+:   */
+/*   errore.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 10:41:09 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 16:04:23 by aybiouss         ###   ########.fr       */
+/*   Created: 2022/12/17 17:25:16 by aybiouss          #+#    #+#             */
+/*   Updated: 2022/12/18 11:27:37 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    push_b(t_stack *a, t_stack *b)
+int    errore(void)
 {
-    if (!is_empty(a))
-    {
-        push_elem(b, creat_elem(a->top->content));
-        pop_elem(a);
-        ft_putstr("pb\n");
-    }
+    ft_putstr("Error\n");
+    exit(EXIT_FAILURE);
 }

@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:39:27 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 15:52:01 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 15:36:28 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ long	ft_atoi(char *str);
 char    **ft_split(char const *s, char c);
 int	    ft_strlen(const char *s);
 void    ft_putstr(char *s);
-int ft_strcmp(char *s1, char *s2);
-
+int     ft_strcmp(char *s1, char *s2);
+int    errore(void);
 
 // movers
 
@@ -67,12 +67,16 @@ void    free_stack(t_stack *a);
 // check
 
 int     is_empty(t_stack *x);
-int     is_sorted(t_stack *x);
+int     is_sorted(t_stack x);
 int     is_max(t_stack *x, int number);
 void    make_to_top(t_stack *x, int number);
 int     is_integer(int ac, char **argv);
 int     is_duplicated(int size, char **av);
 void    check_it(t_stack *a, t_stack *b, int ac, char **av);
+int     is_purely_integer(int size, char *av);
+int     x(int size, char **av);
+int    search_min(t_stack a);
+int    is_index(t_stack x, int number);
 
 // algorithm
 

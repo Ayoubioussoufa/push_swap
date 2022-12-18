@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 11:53:32 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 15:55:40 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/18 16:06:23 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,16 @@ int main(int ac, char **av)
     b = stack_init();
     check_it(a, b, ac - 1, av);
     sort(a, b);
-    printf("%d", a->top->content);
+    // int i = search_min(*a);
+    // printf("%d\n", i);
+    // printf("%d\n", is_index(*a, i));
+    // make_to_top(a, i);
+    // while(a->top)
+    // {
+    //     printf("%d\n", a->top->content);
+    //     a->top =  a->top->under;
+    // }
+   free_stack(a);
+   free(b);
     return (0);
 }
