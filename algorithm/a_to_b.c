@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:26:07 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 16:27:16 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:44:56 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,15 +51,6 @@ void    a_to_b(t_stack *a, t_stack *b)
     start = middle - offset;
     end = middle + offset;
     length = a->size;
-    // printf("%d\n", end);
-    // printf("%d\n", start);
-    // printf("%d\n", middle);
-    // printf("%d\n", offset);
-    // while (tab[i])
-    //     printf("%d ", tab[i++]);
-    // printf("\n %d \t %d \t %d", tab[start], tab[middle], tab[end]);
-    // (void )b;
-    // (void )length;
     while (!is_empty(a))
     {
         while (i < end - start + 1)
@@ -92,3 +83,12 @@ void    a_to_b(t_stack *a, t_stack *b)
     //     }
     // }
 }
+    // printf("%d\n", end);
+    // printf("%d\n", start);
+    // printf("%d\n", middle);
+    // printf("%d\n", offset);
+    // while (tab[i])
+    //     printf("%d ", tab[i++]);
+    // printf("\n %d \t %d \t %d", tab[start], tab[middle], tab[end]);
+    // (void )b;
+    // (void )length;
