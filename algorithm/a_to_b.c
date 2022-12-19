@@ -6,32 +6,12 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:26:07 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 17:44:56 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/19 21:12:40 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-// int hhh(t_stack a, t_stack *b, int min, int max)
-// {
-//     int     n;
-//     int     middle;
-//     int    *tab;
-//     int     i;
-//     int     length;
-
-//     i = 0;
-//     n = check_n(a);
-//     tab = fill_sort_array(&a);
-//     middle = (a->size / 2) - 1;
-//     offset = a->size / n;
-//     length = a->size;
-//     while (length)
-//     {
-        
-//     }
-    
-// }
 void    a_to_b(t_stack *a, t_stack *b)
 {
     int     n;
@@ -46,7 +26,8 @@ void    a_to_b(t_stack *a, t_stack *b)
     i = 0;
     n = check_n(a);
     tab = fill_sort_array(*a);
-    middle = (a->size / 2) - 1;
+    i = 0;
+    middle = (a->size / 2);
     offset = a->size / n;
     start = middle - offset;
     end = middle + offset;
@@ -72,23 +53,4 @@ void    a_to_b(t_stack *a, t_stack *b)
         if (start < 0)
             start = 0;
     }
-    // while (!is_empty(a))
-    // {
-    //     length = a->size;
-    //     while (length)
-    //     {
-    //         if (a->top->content >= tab[start] && a->top->content <= tab[end])
-            
-    //         length--;
-    //     }
-    // }
 }
-    // printf("%d\n", end);
-    // printf("%d\n", start);
-    // printf("%d\n", middle);
-    // printf("%d\n", offset);
-    // while (tab[i])
-    //     printf("%d ", tab[i++]);
-    // printf("\n %d \t %d \t %d", tab[start], tab[middle], tab[end]);
-    // (void )b;
-    // (void )length;

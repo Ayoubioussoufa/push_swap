@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 11:53:32 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 19:54:02 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/19 21:10:05 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(int ac, char **av)
 {
     t_stack *a;
     t_stack *b;
-    int *tab;
+    //int *tab;
     int i;
 
     i = 0;
@@ -25,11 +25,11 @@ int main(int ac, char **av)
     a = stack_init();
     b = stack_init();
     check_it(a, b, ac - 1, av);
-    tab = fill_sort_array(*a);
-    while (tab[i])
-        printf("%d ", tab[i++]);
+    //tab = fill_sort_array(*a);
+    //while (tab[i])
+    //    printf("%d ", tab[i++]);
     //rotate_a(a, 0);
-    //a_to_b(a, b);
+    a_to_b(a, b);
     //sort_over(a, b);
     // int i = search_min(*a);
     // printf("%d\n", i);
