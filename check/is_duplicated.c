@@ -6,61 +6,26 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 12:27:40 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 10:30:26 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:23:27 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int is_duplicated(int size, char **av)
+int is_duplicated(t_stack a)
 {
-    int i;
-    int j;
-    
-    i = 0;
-    while (i < size)
+    t_node  *tmp;
+
+    while(a.top)
     {
-        j = i + 1;
-        while (av[j])
+        tmp = a.top;
+        while (tmp->under)
         {
-            if (ft_strcmp(av[i], av[j]) == 0)
-            {
-                ft_putstr("Error\n");
-                return (0);
-            }
-            j++;
+            tmp = tmp->under;
+            if (a.top->content == tmp->content)
+                errore();
         }
-        i++;
+        a.top = a.top->under;
     }
     return (1);
 }
-
-// int is_duplicated(char **av)
-// {
-//     int i;
-//     int j;
-//     int k;
-    
-//     i = 0;
-//     j = 0;
-//     while (av[i][j])
-//     {
-//         j = 0;
-//         while (av[i][j])
-//         {
-//             k = j + 1;
-//             while (av[i][k])
-//             {
-//                 if (av[i][j] == av[i][k])
-//                 {
-//                     ft_putstr("Error\n");
-//                     return (0);
-//                 }
-//                 k++;
-//             }
-//             j++;
-//         }
-//         i++;
-//     }
-//     return (1);
-// }

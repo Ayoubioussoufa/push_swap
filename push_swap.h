@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:39:27 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 19:17:56 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:14:46 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,10 @@ int     is_empty(t_stack *x);
 int     is_sorted(t_stack x);
 int     is_max(t_stack *x, int number);
 void    make_to_top(t_stack *x, int number);
-int     is_integer(int ac, char **argv);
-int     is_duplicated(int size, char **av);
+int     is_integer(t_stack *a, int ac, char **argv);
+int     is_duplicated(t_stack a);
 void    check_it(t_stack *a, t_stack *b, int ac, char **av);
-int     is_purely_integer(int size, char *av);
+int     is_purely_integer(char *av);
 int     x(int size, char **av);
 int    search_min(t_stack a);
 int    is_index(t_stack x, int number);
