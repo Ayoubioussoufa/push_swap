@@ -6,14 +6,14 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 15:46:15 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/20 11:45:12 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 16:20:32 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    sort_over(t_stack *a, t_stack *b, int *tab)
+void	sort_over(t_stack *a, t_stack *b, int *tab, int n)
 {
-    a_to_b(a, b, tab);
-    b_to_a(a, b, tab);
+	a_to_b(a, b, tab, n);
+	b_to_a(a, b, tab);
 }

@@ -6,18 +6,18 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:09 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 16:04:23 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:27:40 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    push_b(t_stack *a, t_stack *b)
+void	push_b(t_stack *a, t_stack *b)
 {
-    if (!is_empty(a))
-    {
-        push_elem(b, creat_elem(a->top->content));
-        pop_elem(a);
-        ft_putstr("pb\n");
-    }
+	if (!is_empty(a))
+	{
+		push_elem(b, creat_elem(a->top->content));
+		pop_elem(a);
+		ft_putstr("pb\n");
+	}
 }

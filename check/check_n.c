@@ -6,16 +6,16 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 19:09:13 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/18 19:18:23 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 16:28:03 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int check_n(t_stack *a)
+int	check_n(t_stack *a)
 {
-    if (a->size <= 150)
-        return (6);
-    else
-        return (18);
+	if (a->size <= 150)
+		return (8);
+	else
+		return (16);
 }

@@ -6,15 +6,15 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 10:33:19 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/17 10:34:15 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:40:09 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    free_stack(t_stack *a)
+void	free_stack(t_stack *a)
 {
-    while(a->size)
-        pop_elem(a);
-    free(a);
+	while (a->size)
+		pop_elem(a);
+	free(a);
 }

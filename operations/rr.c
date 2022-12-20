@@ -6,15 +6,15 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:41:31 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:30:35 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    rr(t_stack *a, t_stack *b)
+void	rr(t_stack *a, t_stack *b)
 {
-    rotate_a(a, 1);
-    rotate_b(b, 1);
-    ft_putstr("rr\n");
+	rotate_a(a, 1);
+	rotate_b(b, 1);
+	ft_putstr("rr\n");
 }

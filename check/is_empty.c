@@ -6,13 +6,13 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 11:19:29 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/16 15:59:01 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:46:28 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int    is_empty(t_stack *x)
+int	is_empty(t_stack *x)
 {
-    return (x->top == NULL && x->bottom == NULL);
+	return (x->top == NULL && x->bottom == NULL);
 }

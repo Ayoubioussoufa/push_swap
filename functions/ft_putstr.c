@@ -6,17 +6,17 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 15:54:31 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 21:16:33 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:42:39 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    ft_putstr(char *s)
+void	ft_putstr(char *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-        write(1, &s[i++], 1);
+	i = 0;
+	while (s[i])
+		write(1, &s[i++], 1);
 }
