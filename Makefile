@@ -6,11 +6,12 @@
 #    By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/13 11:48:48 by aybiouss          #+#    #+#              #
-#    Updated: 2022/12/18 19:18:13 by aybiouss         ###   ########.fr        #
+#    Updated: 2022/12/20 13:36:00 by aybiouss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
+# NAME_BONUS = checker
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 OPTION = -o
@@ -26,16 +27,21 @@ SRCS = $(addprefix ./check/,$(CHECK))\
 	$(addprefix ./movers/,$(MOVERS))\
 	$(addprefix ./operations/,$(OPERATIONS))\
 	push_swap.c
+# SRCS_BONUS = 
 OBJS = $(SRCS:.c=.o)
-
+# OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 all : $(NAME)
 $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) $(SRCS) $(OPTION) $(NAME)
 
+# bonus : $(NAME_BONUS)
+# $(NAME_BONUS) : $(OBJS_BONUS)
+# 	$(CC) $(CFLAGS) $(SRCS_BONUS) $(OPTION) $(NAME_BONUS)
+
 clean :
-	rm -rf $(OBJS)
+	rm -rf $(OBJS) $(OBJS_BONUS)
 
 fclean : clean
-	rm -rf $(NAME)
+	rm -rf $(NAME) $(NAME_BONUS)
 
 re : fclean all

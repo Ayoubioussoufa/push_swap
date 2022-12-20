@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:39:27 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 17:14:46 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 11:48:30 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,12 +81,12 @@ int     check_n(t_stack *a);
 
 // algorithm
 
-int    *fill_sort_array(t_stack a);
-void    a_to_b(t_stack *a, t_stack *b);
-void    b_to_a(t_stack *a, t_stack *b);
+int    *fill_sort_array(t_stack x);
+void    a_to_b(t_stack *a, t_stack *b, int *tab);
+void    b_to_a(t_stack *a, t_stack *b, int *tab);
 void    sort_fifteen(t_stack *a, t_stack *b);
-void    sort_over(t_stack *a, t_stack *b);
+void    sort_over(t_stack *a, t_stack *b, int *tab);
 void    sort_three(t_stack *a);
-void    sort(t_stack *a, t_stack *b);
+void    sort(t_stack *a, t_stack *b, int *tab);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 11:00:40 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 17:22:31 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:38:00 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ int is_purely_integer(char *av)
     }
     return (1);
 }
-
-// int x(int size, char **av)
-// {
-//     int i;
-
-//     i = -1;
-//     while (++i < size)
-//     {
-//         if (!is_purely_integer(size, av[i]))
-//             return (0);
-//     }
-//     return (1);
-// }

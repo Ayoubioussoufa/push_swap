@@ -6,28 +6,28 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:26:07 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/19 21:12:40 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/20 11:39:43 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void    a_to_b(t_stack *a, t_stack *b)
+void    a_to_b(t_stack *a, t_stack *b, int *tab)
 {
     int     n;
     int     middle;
     int     offset;
     int     start;
     int     end;
-    int    *tab;
+    //int    *tab;
     int     length;
     int     i;
 
     i = 0;
     n = check_n(a);
-    tab = fill_sort_array(*a);
-    i = 0;
-    middle = (a->size / 2);
+    //tab = fill_sort_array(*a);
+    //i = 0;
+    middle = (a->size / 2) - (a->size % 2);
     offset = a->size / n;
     start = middle - offset;
     end = middle + offset;
