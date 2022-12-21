@@ -6,7 +6,7 @@
 /*   By: aybiouss <aybiouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:26:07 by aybiouss          #+#    #+#             */
-/*   Updated: 2022/12/20 16:20:41 by aybiouss         ###   ########.fr       */
+/*   Updated: 2022/12/21 09:54:53 by aybiouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	a_to_b(t_stack *a, t_stack *b, int *tab, int n)
 	t_data		context;
 	static int	i;
 
-	context.middle = (a->size / 2) - (a->size % 2);
+	context.middle = (a->size / 2);
 	context.offset = a->size / n;
 	context.start = context.middle - context.offset;
 	context.end = context.middle + context.offset;
